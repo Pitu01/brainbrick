@@ -1,0 +1,14 @@
+<!doctype html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BrainBrick</title></head>
+<body><script>
+(function(){
+  var path = window.location.pathname;
+  var repo = '/brainbrick/';
+  if (path.indexOf(repo) === 0) {
+    var rest = path.slice(repo.length);
+    sessionStorage.setItem('brainbrick-route', rest);
+  }
+  window.location.replace(repo);
+})();
+</script></body></html>

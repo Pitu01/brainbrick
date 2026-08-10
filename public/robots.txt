@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pitu01.github.io/brainbrick/sitemap.xml

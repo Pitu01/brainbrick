@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="BrainBrick is a hands-on robotics learning platform for building, coding, experimenting and creating with robots.">
+    <title>BrainBrick | Build • Code • Create</title>
+      <meta property="og:title" content="BrainBrick | Build • Code • Create">
+    <meta property="og:description" content="Hands-on robotics learning with BrainBrick.">
+    <meta property="og:type" content="website">
+    <meta name="author" content="BrainBrick">
+      <link rel="icon" type="image/svg+xml" href="/brainbrick/brainbrick-logo.svg">
+  <script>
+(function(){
+  var route = sessionStorage.getItem('brainbrick-route');
+  if (route) {
+    sessionStorage.removeItem('brainbrick-route');
+    history.replaceState(null, '', '/brainbrick/' + route);
+  }
+})();
+</script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
